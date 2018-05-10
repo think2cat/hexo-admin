@@ -71,9 +71,9 @@ var Posts = React.createClass({
               <a className='posts_perma-link' target="_blank" href={path.join(rootPath, '/', post.path)}>
                 <i className='fa fa-link'/>
               </a>
-              <Link className='posts_edit-link' to="post" postId={post._id}>
+              <a className='posts_edit-link' target="_blank" href={'#/posts/' + post._id}>
                 <i className='fa fa-pencil'/>
-              </Link>
+              </a>
             </li>
           )
         }
